@@ -1,0 +1,2 @@
+# openspec-schemas
+OpenSpec Schemas
