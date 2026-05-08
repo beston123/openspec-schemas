@@ -1,0 +1,25 @@
+schema: super-spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+context: |
+  Tech stack: TypeScript, React, Node.js
+  We use conventional commits
+  Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+rules:
+  proposal:
+    - May include non-functional requirements (NFRs)
+    - Include SLO targets (latency, concurrency, quality) when relevant
+    - Include Capabilities section mapping to spec folder names
+  specs:
+    - Use Given/When/Then (Gherkin) format for all Scenarios
+    - Every Requirement must include Priority (P0/P1/P2) and Rationale
+    - Prefer existing specs over creating new ones.
+  design:
+    - Include designs for performance, availability, security, consistency, etc. (if applicable)
+    - Include architecture diagrams (Mermaid or ASCII), sequence diagrams for complex flows
+    - Avoid code implementation
