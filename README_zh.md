@@ -59,8 +59,12 @@ brainstorm → proposal → specs / design → plan → tasks → apply → veri
 将 schema 文件夹复制到项目的 OpenSpec 目录：
 
 ```bash
-git clone https://github.com/beston123/openspec-schemas.git
+## project-level schema
+mkdir -p your-project/openspec/schemas/
 cp -r openspec-schemas/schemas/super-spec-driven your-project/openspec/schemas/
+## user-level schema
+mkdir -p ~/.local/share/openspec/schemas/
+cp -r openspec-schemas/schemas/super-spec-driven ~/.local/share/openspec/schemas/
 ```
 
 安装后项目结构如下：

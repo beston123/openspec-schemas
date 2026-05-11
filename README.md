@@ -60,7 +60,12 @@ Copy the schema folder into your project's OpenSpec directory:
 
 ```bash
 git clone https://github.com/beston123/openspec-schemas.git
-cp -r openspec-schemas/schemas your-project/openspec/
+## project-level schema
+mkdir -p your-project/openspec/schemas/
+cp -r openspec-schemas/schemas/super-spec-driven your-project/openspec/schemas/
+## user-level schema
+mkdir -p ~/.local/share/openspec/schemas/
+cp -r openspec-schemas/schemas/super-spec-driven ~/.local/share/openspec/schemas/
 ```
 
 Your project will look like this:
